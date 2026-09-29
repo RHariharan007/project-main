@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout — Shopcraft</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header"></header>
+
+<main class="container">
+  <h1 class="page-title">Checkout</h1>
+
+  <div id="alert-box" class="alert alert-error"></div>
+
+  <div class="checkout-layout">
+    <div class="card checkout-form-card">
+      <h3>Shipping address</h3>
+      <form id="checkout-form">
+        <div class="field">
+          <label for="shippingAddress">Deliver to</label>
+          <textarea id="shippingAddress" rows="4" placeholder="Full address, city, state, PIN code" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="place-order-btn">Place order</button>
+      </form>
+    </div>
+
+    <aside class="card order-review">
+      <h3>Order review</h3>
+      <div id="review-items"><p class="muted">Loading...</p></div>
+      <div class="summary-row" style="border-top:1px solid var(--line);padding-top:14px;margin-top:8px;font-weight:700;">
+        <span>Total</span>
+        <span id="review-total">₹0.00</span>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<script src="js/common.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>

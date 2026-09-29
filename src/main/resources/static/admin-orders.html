@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manage orders — Shopcraft</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header"></header>
+
+<main class="container">
+  <div class="admin-toolbar">
+    <div>
+      <h1 class="page-title" style="padding:0;">Orders</h1>
+      <p class="muted">Review every order placed and update its status.</p>
+    </div>
+  </div>
+
+  <div id="alert-box" class="alert alert-error"></div>
+
+  <div class="admin-table-wrap">
+    <table class="admin-table">
+      <thead>
+        <tr>
+          <th>Order #</th>
+          <th>Customer</th>
+          <th>Date</th>
+          <th>Items</th>
+          <th>Total</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="orders-tbody">
+        <tr><td colspan="6" class="muted">Loading orders...</td></tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<script src="js/common.js"></script>
+<script src="js/admin-orders.js"></script>
+</body>
+</html>
