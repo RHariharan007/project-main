@@ -1,0 +1,20 @@
+/* Page-specific styles for login.html (also reused by register.html) */
+
+.auth-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, var(--paper) 0%, #F1EEE6 100%);
+  padding: 24px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 36px;
+}
+
+.auth-card h1 {
+  font-size: 1.7rem;
+}

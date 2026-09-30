@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin dashboard — Shopcraft</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header"></header>
+
+<main class="container">
+  <h1 class="page-title">Dashboard</h1>
+  <p class="muted mb-24">A quick snapshot of how the store is doing.</p>
+
+  <div id="alert-box" class="alert alert-error"></div>
+
+  <div class="stat-grid" id="stat-grid">
+    <div class="card stat-card"><p class="muted">Loading stats...</p></div>
+  </div>
+
+  <div class="admin-quicklinks">
+    <a href="admin-products.html" class="card quicklink">
+      <h3>Manage products</h3>
+      <p class="muted">Add, edit, or remove items from the catalog.</p>
+    </a>
+    <a href="admin-orders.html" class="card quicklink">
+      <h3>Manage orders</h3>
+      <p class="muted">Review orders and update their delivery status.</p>
+    </a>
+  </div>
+</main>
+
+<script src="common.js"></script>
+<script src="admin-dashboard.js"></script>
+</body>
+</html>

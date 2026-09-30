@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — Shopcraft</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="products.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header"></header>
+
+<main class="container">
+
+  <section class="shop-hero">
+    <h1>Everything you need, made simple.</h1>
+    <p class="muted">Browse the full catalog or search for something specific.</p>
+  </section>
+
+  <div class="toolbar">
+    <input type="text" id="search-input" placeholder="Search products...">
+    <select id="category-filter">
+      <option value="">All categories</option>
+    </select>
+  </div>
+
+  <div id="alert-box" class="alert alert-error"></div>
+
+  <div id="product-grid" class="product-grid">
+    <p class="muted">Loading products...</p>
+  </div>
+
+</main>
+
+<script src="common.js"></script>
+<script src="products.js"></script>
+</body>
+</html>

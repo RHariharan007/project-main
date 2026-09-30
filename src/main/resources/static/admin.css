@@ -1,0 +1,107 @@
+/* Shared styles for all admin pages: dashboard, products, orders */
+
+.page-title { padding: 32px 0 4px; font-size: 1.9rem; }
+
+/* ---- Dashboard ---- */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.stat-card { padding: 22px; }
+.stat-label { color: var(--ink-soft); font-size: 0.85rem; margin-bottom: 6px; }
+.stat-value { font-family: var(--font-head); font-size: 1.8rem; font-weight: 700; }
+
+.admin-quicklinks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  padding-bottom: 64px;
+}
+.quicklink { padding: 24px; transition: box-shadow 0.15s ease; }
+.quicklink:hover { box-shadow: var(--shadow-card); }
+
+/* ---- Admin toolbar (products / orders pages) ---- */
+.admin-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* ---- Admin table ---- */
+.admin-table-wrap {
+  overflow-x: auto;
+  padding-bottom: 64px;
+}
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-l);
+  overflow: hidden;
+}
+.admin-table th, .admin-table td {
+  text-align: left;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+.admin-table th {
+  background: #F5F3ED;
+  color: var(--ink-soft);
+  font-weight: 600;
+  font-size: 0.78rem;
+  text-transform: none;
+}
+.admin-table tr:last-child td { border-bottom: none; }
+
+.table-actions { display: flex; gap: 8px; }
+.icon-btn {
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  border-radius: var(--radius-s);
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.icon-btn:hover { border-color: var(--ink); }
+
+/* ---- Modal (used for add/edit product form) ---- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(27,27,31,0.45);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 24px;
+}
+.modal-overlay.show { display: flex; }
+.modal-box {
+  background: var(--surface);
+  border-radius: var(--radius-l);
+  padding: 28px;
+  width: 100%;
+  max-width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.modal-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.modal-close { background: none; border: none; font-size: 1.3rem; color: var(--ink-soft); }
+
+select#status-select {
+  padding: 6px 10px;
+  border-radius: var(--radius-s);
+  border: 1px solid var(--line);
+}

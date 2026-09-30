@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your cart — Shopcraft</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header"></header>
+
+<main class="container">
+  <h1 class="page-title">Your cart</h1>
+
+  <div id="alert-box" class="alert alert-error"></div>
+
+  <div class="cart-layout">
+    <div id="cart-items" class="cart-items">
+      <p class="muted">Loading cart...</p>
+    </div>
+
+    <aside class="cart-summary card">
+      <h3>Order summary</h3>
+      <div class="summary-row">
+        <span class="muted">Subtotal</span>
+        <span id="summary-total">₹0.00</span>
+      </div>
+      <div class="summary-row">
+        <span class="muted">Shipping</span>
+        <span class="muted">Calculated at checkout</span>
+      </div>
+      <a href="checkout.html" class="btn btn-primary btn-block mt-24" id="checkout-btn">Proceed to checkout</a>
+    </aside>
+  </div>
+</main>
+
+<script src="common.js"></script>
+<script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* Page-specific styles for orders.html — customer order history */
+
+.page-title { padding: 32px 0 8px; font-size: 1.9rem; }
+
+.order-card {
+  padding: 20px 24px;
+  margin-bottom: 16px;
+}
+
+.order-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.order-id { font-weight: 700; }
+.order-date { color: var(--ink-soft); font-size: 0.85rem; }
+
+.order-line {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  padding: 6px 0;
+}
+
+.order-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-weight: 700;
+}
+
+.empty-orders { padding: 60px 0; text-align: center; }
